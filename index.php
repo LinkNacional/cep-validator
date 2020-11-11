@@ -1,8 +1,9 @@
 <?php
 
+//For debug purposes
 $obj = new verifica();
 
-$valido = $obj->verificaCep(01.29389);
+$valido = $obj->verificaCep('01.29#3@8-9');
 
 if ($valido) {
     echo 'é valido';
@@ -97,7 +98,6 @@ class verifica
             $string = str_split($string);
             array_splice($string, 2, 0, '.');
             $string = implode('', $string);
-            echo $string;
             $cep = (float) $string;
         }
 
