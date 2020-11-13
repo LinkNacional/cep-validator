@@ -11,13 +11,13 @@ $obj->setIntervalo(['01000001', '05999999',
     '07000001', '07399999',
     '07400001', '07499999',
     '06700001', '06729999', ]);
-*/
+
 if ($obj->verificarCepNoIntervalo()) {
     echo 'é valido';
 } else {
     echo 'não é válido';
 }
-
+*/
 class Cep
 {
     private $cepIntervalo;
